@@ -1,5 +1,5 @@
 # Homeyduino_MultiSensor
-An Homeyduino (esp8266) multi sensor reporting temperature, humidity and luminancey to Homey.
+An Homeyduino (esp8266) multi sensor reporting temperature, humidity and luminance to Homey.
 
 ## Features
 
