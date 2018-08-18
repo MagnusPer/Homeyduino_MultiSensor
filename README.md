@@ -1,5 +1,5 @@
 # Homeyduino_MultiSensor
-An Arduino/esp8266 library to interface the Athom Homey reporting temperature, humidity and luminancey 
+An Homeyduino (esp8266) multi sensor reporting temperature, humidity and luminancey to Homey.
 
 # Features
 
