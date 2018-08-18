@@ -22,8 +22,8 @@
 DHTesp dht;
 Adafruit_TSL2561_Unified tsl = Adafruit_TSL2561_Unified(TSL2561_ADDR_FLOAT, 12345);
 
-const char* wifiSSID = "GuestHosMange";
-const char* wifiPassword = "Magnus123";
+const char* wifiSSID = "********";
+const char* wifiPassword = "*******";
 
 int currentLuminance;
 int previousLuminance = 0;
