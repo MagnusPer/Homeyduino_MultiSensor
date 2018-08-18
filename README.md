@@ -9,7 +9,7 @@ An Homeyduino (esp8266) multi sensor reporting temperature, humidity and luminan
 
 ## Wiring
 
-![Homeyduino_MultiSensor](https://github.com/MagnusPer/Homeyduino_MultiSensor/blob/master/Homeyduino_MultiSensor.jpg)
+![Homeyduino_MultiSensor](https://github.com/MagnusPer/Homeyduino_MultiSensor/blob/master/docs/Homeyduino_MultiSensor.jpg)
 
 ## References
 Athom Homey: https://www.athom.com/en/
