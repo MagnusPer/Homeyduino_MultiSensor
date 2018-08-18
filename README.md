@@ -4,7 +4,7 @@ An Homeyduino (esp8266) multi sensor reporting temperature, humidity and luminan
 ## Features
 To reduce network trafik and load to homey the multi sensor only report status either after a predefined interval or when the configurable threshold is meet.
 
-`reportInterval` default 60 000-------Time in milliseconds between reports to Homey (e.g. 600000ms = 10min)
+`reportInterval` default 60 000-------Time in milliseconds between reports to Homey (e.g. 60 000ms = 1min)
 
 `thresholdLuminance` default 100------Threshold level in luminance (Lux) to send report to Homey
 
