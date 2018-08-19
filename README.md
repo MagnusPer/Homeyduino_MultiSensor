@@ -2,7 +2,7 @@
 An Homeyduino (esp8266) multi sensor reporting temperature, humidity and luminance to Homey.
 
 ## Features
-To reduce network trafik and load to homey the multi sensor only report status either after a predefined interval or when the configurable threshold is met.
+To reduce network trafik and load for Homey the multi sensor only report status either after a predefined interval or when the configurable threshold is met.
 
 | Parameter              | Default value  | Description                                                          |
 | ---------------------- | -------------- | -------------------------------------------------------------------- |
