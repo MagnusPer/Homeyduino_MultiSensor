@@ -6,7 +6,7 @@ To reduce network trafik and load to homey the multi sensor only report status e
 
 | Parameter              | Default value  | Description                                                          |
 | ---------------------- | -------------- | -------------------------------------------------------------------- |
-| `reportInterval`       | 60 000 ms      | Time in milliseconds between reports to Homey (e.g. 60 000ms = 1min) |
+| `reportInterval`       | 60 000 ms      | Time in milliseconds between reports to Homey (60 000ms = 1min)      |
 | `thresholdTemperature` | 0.5            | Threshold level in celsius (*C) to send report to Homey              |
 | `thresholdHumidity`    | 1              | Threshold level in humidity (H) to send report to Homey              |
 | `thresholdLuminance`   | 100            | Threshold level in luminance (Lux) to send report to Homey           |
