@@ -34,3 +34,5 @@ Needed Arduino Libraries to be included in [IDE](https://www.arduino.cc/en/Main/
 
 ## References
 Athom Homey: https://www.athom.com/en/
+
+Adafruit TSL2561: https://www.adafruit.com/product/439
