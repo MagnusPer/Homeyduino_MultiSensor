@@ -1,5 +1,5 @@
 # Homeyduino_MultiSensor
-An [NodeMcu](http://nodemcu.com/index_en.html) (esp8266) multi sensor reporting temperature, humidity and luminance to [Homey](https://www.athom.com/en/).
+An [NodeMcu](http://nodemcu.com/index_en.html) (esp8266) based multi sensor reporting temperature, humidity and luminance to [Homey](https://www.athom.com/en/).
 
 ## Features
 To reduce network trafik and load for Homey the multi sensor only report status either after a predefined interval or when the configurable threshold is met.
