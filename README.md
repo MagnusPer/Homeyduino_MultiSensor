@@ -28,9 +28,8 @@ Needed Arduino Libraries to be included in [IDE](https://www.arduino.cc/en/Main/
 ![Homeyduino_MultiSensor](https://github.com/MagnusPer/Homeyduino_MultiSensor/blob/master/images/Homeyduino_MultiSensor.jpg)
 
 ## Release Notes
-version 1.1 - minor updates - increased reportInterval and decreased threshold for luminance
-
-version 1.1 - minor updates - increased reportInterval and decreased threshold for luminance
+- version 1.0 - First release
+- version 1.1 - minor updates - increased reportInterval and decreased threshold for luminance
 
 ## References
 - Athom Homey: https://www.athom.com/en/
