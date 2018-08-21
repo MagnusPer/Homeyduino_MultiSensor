@@ -33,10 +33,7 @@ Needed Arduino Libraries to be included in [IDE](https://www.arduino.cc/en/Main/
 ![Homeyduino_MultiSensor](https://github.com/MagnusPer/Homeyduino_MultiSensor/blob/master/images/Homeyduino_MultiSensor.jpg)
 
 ## References
-Athom Homey: https://www.athom.com/en/
-
-Adafruit TSL2561: https://www.adafruit.com/product/439
-
-Adafruit DHT22: https://www.adafruit.com/product/385 
-
-NodeMcu: http://nodemcu.com/index_en.html
+- Athom Homey: https://www.athom.com/en/
+- Adafruit TSL2561: https://www.adafruit.com/product/439
+- Adafruit DHT22: https://www.adafruit.com/product/385 
+- NodeMcu: http://nodemcu.com/index_en.html
