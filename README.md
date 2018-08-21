@@ -30,7 +30,7 @@ Needed Arduino Libraries to be included in [IDE](https://www.arduino.cc/en/Main/
 
 ## Wiring
 
-![Homeyduino_MultiSensor](https://github.com/MagnusPer/Homeyduino_MultiSensor/blob/master/docs/Homeyduino_MultiSensor.jpg)
+![Homeyduino_MultiSensor](https://github.com/MagnusPer/Homeyduino_MultiSensor/blob/master/images/Homeyduino_MultiSensor.jpg)
 
 ## References
 Athom Homey: https://www.athom.com/en/
