@@ -11,11 +11,6 @@ To reduce network trafik and load for Homey the multi sensor only report status 
 | **thresholdHumidity**    | 1            | Threshold level in humidity (H) to send report to Homey              |
 | **thresholdLuminance**   | 50           | Threshold level in luminance (Lux) to send report to Homey           |
 
-## Release Notes
-version 1.0 - initial release
-
-version 1.1 - minor updates - increased reportInterval and decreased threshold for luminance
-
 ## Installation
 In the Homey install the [Homeyduino](https://apps.athom.com/app/com.athom.homeyduino) app 
 
@@ -31,6 +26,11 @@ Needed Arduino Libraries to be included in [IDE](https://www.arduino.cc/en/Main/
 ## Wiring
 
 ![Homeyduino_MultiSensor](https://github.com/MagnusPer/Homeyduino_MultiSensor/blob/master/images/Homeyduino_MultiSensor.jpg)
+
+## Release Notes
+version 1.1 - minor updates - increased reportInterval and decreased threshold for luminance
+
+version 1.1 - minor updates - increased reportInterval and decreased threshold for luminance
 
 ## References
 - Athom Homey: https://www.athom.com/en/
