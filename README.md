@@ -29,7 +29,7 @@ Needed Arduino Libraries to be included in [IDE](https://www.arduino.cc/en/Main/
 
 ## Release Notes
 - version 1.0 - First release
-- version 1.1 - minor updates - increased reportInterval and decreased threshold for luminance
+- version 1.1 - Minor updates | increased reportInterval and cleaned up some code
 
 ## Future improvments
 - Sensor calibration configuration parameters
