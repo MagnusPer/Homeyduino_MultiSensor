@@ -9,7 +9,7 @@ To reduce network trafik and load for Homey the multi sensor only report status 
 | **reportInterval**       | 600 000 ms   | Time in milliseconds between reports to Homey (600 000ms = 10min)    |
 | **thresholdTemperature** | 0.5          | Threshold level in celsius (*C) to send report to Homey              |
 | **thresholdHumidity**    | 1            | Threshold level in humidity (H) to send report to Homey              |
-| **thresholdLuminance**   | 50           | Threshold level in luminance (Lux) to send report to Homey           |
+| **thresholdLuminance**   | 100          | Threshold level in luminance (Lux) to send report to Homey           |
 
 ## Installation
 In the Homey install the [Homeyduino](https://apps.athom.com/app/com.athom.homeyduino) app 
@@ -30,6 +30,10 @@ Needed Arduino Libraries to be included in [IDE](https://www.arduino.cc/en/Main/
 ## Release Notes
 - version 1.0 - First release
 - version 1.1 - minor updates - increased reportInterval and decreased threshold for luminance
+
+## Future improvments
+- Sensor calibration configuration parameters
+- Minimum reportInterval configuration parameter to minimize reports when Luminance quickly change 
 
 ## References
 - Athom Homey: https://www.athom.com/en/
