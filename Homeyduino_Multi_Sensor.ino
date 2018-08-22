@@ -1,4 +1,4 @@
-no/*
+/*
  * version 1.1
  * 
  * Homeyduino Multi Sensor reporting temperature, humidity and luminance to Homey  
