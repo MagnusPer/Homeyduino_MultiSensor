@@ -1,4 +1,4 @@
-/*
+no/*
  * version 1.1
  * 
  * Homeyduino Multi Sensor reporting temperature, humidity and luminance to Homey  
@@ -23,8 +23,8 @@
 DHTesp dht;
 Adafruit_TSL2561_Unified tsl = Adafruit_TSL2561_Unified(TSL2561_ADDR_FLOAT, 12345);
 
-const char* wifiSSID = "xxxxxxx";           /* your wifi network SSID */
-const char* wifiPassword = "xxxxxxx";       /* your wifi network password */      
+const char* wifiSSID = "";           /* your Wifi network SSID */
+const char* wifiPassword = "";       /* your WiFi network password */      
 
 int currentLuminance;
 int previousLuminance = 0;
@@ -34,7 +34,7 @@ float currentTemperature;
 float previousTemperature = 0;
 unsigned long previousMillis = 0;      
 const unsigned long reportInterval = 600000;        /* Time in milliseconds between reports to Homey (600 000ms = 10min or 60 000ms = 1min) */
-int thresholdLuminance = 50;                        /* Treshold level in luminance (Lux) to send report to Homey (current-previous > treshold) */
+int thresholdLuminance = 100;                        /* Treshold level in luminance (Lux) to send report to Homey (current-previous > treshold) */
 float thresholdHumidity = 1;                        /* Treshold level in humidity (H) to send report to Homey */
 float thresholdTemperature = 0.5;                   /* Treshold level in celsius (*C) to send report to Homey */
 
@@ -97,17 +97,17 @@ void setup(void)
   WiFi.setSleepMode(WIFI_NONE_SLEEP);
   WiFi.mode(WIFI_STA);
   WiFi.begin(wifiSSID, wifiPassword);
-  IPAddress ip(192,168,1,206);                  /* Configure your static IP adress */
-  IPAddress gateway(192,168,1,1);               /* Configure your static IP adress */
-  IPAddress subnet(255,255,255,0);              /* Configure your static IP adress */
-  WiFi.config(ip, gateway, subnet);             /* Set static IP adress */
+  IPAddress ip(192,168,1,206);                  /* Configure static IP address */
+  IPAddress gateway(192,168,1,1);               /* Configure static IP address */
+  IPAddress subnet(255,255,255,0);              /* Configure static IP address */
+  WiFi.config(ip, gateway, subnet);             /* Set static IP address */
   
   while (WiFi.status() != WL_CONNECTED) delay(500);
   Serial.print("WiFi connected: ");
   Serial.println(WiFi.localIP());
 
   /* Initiate and starts the Homey interface  */
-  Homey.begin("Homeyduino_Multisensor");
+  Homey.begin("MultiSensor");
   Homey.setClass("sensor");
   Homey.addCapability("measure_temperature");
   Homey.addCapability("measure_humidity");
@@ -144,9 +144,9 @@ void loop(void)
   if(currentMillis - previousMillis > reportInterval) {
     previousMillis = currentMillis;
     
-    //Serial.print(currentTemperature); Serial.print(" *C, ");
-    //Serial.print(currentHumidity); Serial.print(" H, ");
-    //Serial.print(currentLuminance); Serial.println(" lux");
+    /*Serial.print(currentTemperature); Serial.print(" *C, ");
+    Serial.print(currentHumidity); Serial.print(" H, ");
+    Serial.print(currentLuminance); Serial.println(" lux");*/
     
     Homey.setCapabilityValue("measure_temperature", (float) currentTemperature);
     Homey.setCapabilityValue("measure_humidity", (float) currentHumidity);
@@ -169,4 +169,5 @@ void loop(void)
       Homey.setCapabilityValue("measure_luminance", (int) currentLuminance);
     }
 
+  delay(500);     /* To set a minimum reportInterval if the sensordata change fast*/
 }
