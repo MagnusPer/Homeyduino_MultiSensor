@@ -1,5 +1,5 @@
 # Homeyduino_MultiSensor
-An [Wemos D1 Mini](https://wiki.wemos.cc/products:d1:d1_mini) based 1-channel LED Dimmer controled by [Homey](https://www.athom.com/en/) home automation system and by a physical momentary switch. 
+An [NodeMCU](https://www.nodemcu.com/index_en.html) (esp8266) based multi sensor reporting temperature, humidity and luminance to Homey.
 
 ## Features
 To reduce network trafik and load for Homey the multi sensor only report status either after a predefined interval or when the configurable threshold is met.
