@@ -1,4 +1,4 @@
-# Homeyduino_MultiSensor
+# Homeyduino MultiSensor
 An [NodeMCU](https://www.nodemcu.com/index_en.html) (esp8266) based multi sensor reporting temperature, humidity and luminance to Homey.
 
 ## Features
