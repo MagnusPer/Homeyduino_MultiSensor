@@ -33,7 +33,7 @@ MQTT Topics to be sent to the Broker
 
 ## Wiring
 
-![Homeyduino_MultiSensor](https://github.com/MagnusPer/Homeyduino_MultiSensor/blob/master/images/Homeyduino_MultiSensor.jpg)
+![Homeyduino_MultiSensor](https://github.com/MagnusPer/Homeyduino_MultiSensor/blob/master/images/MultiSensor.jpg)
 
 ## Release Notes
 - version 1.0 - First release
