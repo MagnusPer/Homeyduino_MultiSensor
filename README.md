@@ -2,14 +2,14 @@
 An [NodeMCU](https://www.nodemcu.com/index_en.html) (esp8266) based multi sensor reporting temperature, humidity and luminance via MQTT topics. Perfect to be added to a HomeAutomation system 
 
 ## Features
-To reduce network trafik and network load the multi sensor only report status after a predefined interval or when the configurable threshold is met.
+To reduce network traffic and network load the multi sensor only report status after a predefined interval or when the configurable threshold is met.
 
 | Parameter              | Default value  | Description                                                          |
 | ---------------------- | -------------- | -------------------------------------------------------------------- |
 | **reportInterval**       | 600 000 ms   | Time in milliseconds between reports (600 000ms = 10min)             |
-| **thresholdTemperature** | 0.5          | Threshold level in celsius (*C) to send report to Homey              |
-| **thresholdHumidity**    | 1            | Threshold level in humidity (H) to send report to Homey              |
-| **thresholdLuminance**   | 100          | Threshold level in luminance (Lux) to send report to Homey           |
+| **thresholdTemperature** | 0.5          | Threshold level in Celsius (*C) to send report to Homey              |
+| **thresholdHumidity**    | 1            | Threshold level in Humidity (H) to send report to Homey              |
+| **thresholdLuminance**   | 100          | Threshold level in Luminance (Lux) to send report to Homey           |
 
 ## Installation
 Needed Arduino Libraries to be included in [IDE](https://www.arduino.cc/en/Main/Software). Install them either from GitHub repositories directly or within the IDE application itself **Sketch > Import Library** 
@@ -27,9 +27,9 @@ MQTT Topics to be sent to the Broker
 
 | Topic                              | Description                                         |
 | ---------------------------------- | --------------------------------------------------- |
-| MultiSensor/Luminance              |  sensor value in lux                                |
-| MultiSensor/Temperature            |  sensor value in celsius                            |
-| MultiSensor/Humidity               |  sensor value in humidity                           |
+| MultiSensor/Luminance              |  sensor value in Lux                                |
+| MultiSensor/Temperature            |  sensor value in Celsius                            |
+| MultiSensor/Humidity               |  sensor value in Humidity                           |
 
 ## Wiring
 
@@ -39,7 +39,7 @@ MQTT Topics to be sent to the Broker
 - version 1.0 - First release
 - version 1.1 - Minor updates | increased reportInterval and cleaned up some code
 
-## Future improvments
+## Future improvements
 - Sensor calibration configuration parameters
 - Minimum reportInterval configuration parameter to minimize reports when Luminance quickly change 
 
