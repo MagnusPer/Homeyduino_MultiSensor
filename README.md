@@ -27,9 +27,9 @@ MQTT Topics to be sent to the Broker
 
 | Topic                              | Description                                         |
 | ---------------------------------- | --------------------------------------------------- |
-| MultiSensor/Luminance              |  sensor value in Lux                                |
-| MultiSensor/Temperature            |  sensor value in Celsius                            |
-| MultiSensor/Humidity               |  sensor value in Humidity                           |
+| MultiSensor/Luminance              |  sensor value in lux                                |
+| MultiSensor/Temperature            |  sensor value in celsius                            |
+| MultiSensor/Humidity               |  sensor value in humidity                           |
 
 ## Wiring
 
